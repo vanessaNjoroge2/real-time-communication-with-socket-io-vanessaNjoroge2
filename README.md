@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Socket.io Real-Time Chat Application 💬
 A modern, real-time chat application built with Socket.io, Express.js, React, TypeScript, and MongoDB. Features include instant messaging, user authentication, online status indicators, and beautiful UI animations.
 
