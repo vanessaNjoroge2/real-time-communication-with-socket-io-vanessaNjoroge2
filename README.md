@@ -22,9 +22,9 @@ Features include instant messaging, user authentication, online status indicator
 
 ---
 
-## 🏗️ Project Structure
+``🏗️ Project Structure
 
-``socket-io-chat-app/
+socket-io-chat-app/
 │
 ├── backend/                         # Node.js + Express backend
 │   ├── src/
