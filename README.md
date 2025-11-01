@@ -20,50 +20,9 @@ Features include instant messaging, user authentication, online status indicator
 - 🔒 **Secure** — Password hashing with bcrypt, JWT authentication  
 - 💾 **Persistent Storage** — Messages and users stored in MongoDB  
 
----
-
-``🏗️ Project Structure
-
-socket-io-chat-app/
-│
-├── backend/                         # Node.js + Express backend
-│   ├── src/
-│   │   ├── index.ts                 # 🚀 Main entry point (Express + Socket.io)
-│   │   ├── config/
-│   │   │   └── database.ts          # 🗄️ MongoDB connection setup
-│   │   ├── controllers/
-│   │   │   └── authController.ts    # 🔐 Handles login, register, logout
-│   │   ├── middleware/
-│   │   │   └── authMiddleware.ts    # 🛡️ JWT verification middleware
-│   │   ├── models/
-│   │   │   ├── user.ts              # 👤 User schema (username, email, password)
-│   │   │   └── message.ts           # 💬 Message schema (content, sender, timestamp)
-│   │   ├── routes/
-│   │   │   └── authRoutes.ts        # 🛣️ Auth API routes
-│   │   ├── services/
-│   │   │   └── notificationService.ts # 🔔 Notification logic
-│   │   └── sockets/
-│   │       └── chatSocket.ts        # ⚡ Socket.io events (messages, status)
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── .env                         # Environment variables
-│
-├── frontend/                        # React + TypeScript frontend
-│   ├── public/
-│   │   └── index.html               # 📄 HTML template
-│   ├── src/
-│   │   ├── index.tsx                # 🚀 React entry point
-│   │   ├── App.tsx                  # 🏠 Main app with routing
-│   │   ├── App.css                  # 🎨 Global styles
-│   │   ├── index.css                # 📝 CSS reset
-│   │   ├── components/
-│   │   │   ├── ChatWindow.tsx       # 💬 Chat UI
-│   │   │   └── NotificationToast.tsx# 🔔 Notifications
-│   │   ├── contexts/
-│   │   │   └── AuthContext.tsx      # 🔐 Auth state
 
 
----
+
 
 ## 🚀 Getting Started
 
