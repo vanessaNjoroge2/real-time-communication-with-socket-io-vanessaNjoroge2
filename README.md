@@ -26,48 +26,41 @@ Features include instant messaging, user authentication, online status indicator
 
 socket-io-chat-app/
 │
-├── backend/ # Backend Node.js application
-│ ├── src/
-│ │ ├── index.ts # 🚀 Starts Express & Socket.io server
-│ │ ├── config/
-│ │ │ └── database.ts # 🗄️ MongoDB connection configuration
-│ │ ├── controllers/
-│ │ │ └── authController.ts # 🔐 Handles login, register, logout logic
-│ │ ├── middleware/
-│ │ │ └── authMiddleware.ts # 🛡️ JWT token verification
-│ │ ├── models/
-│ │ │ ├── user.ts # 👤 User schema
-│ │ │ └── message.ts # 💬 Message schema
-│ │ ├── routes/
-│ │ │ └── authRoutes.ts # 🛣️ Auth routes
-│ │ ├── services/
-│ │ │ └── notificationService.ts# 🔔 Handles notifications
-│ │ └── sockets/
-│ │ └── chatSocket.ts # ⚡ Socket.io event handlers
-│ ├── package.json
-│ ├── tsconfig.json
-│ └── .env # Environment variables
+├── backend/                         # Node.js + Express backend
+│   ├── src/
+│   │   ├── index.ts                 # 🚀 Main entry point (Express + Socket.io)
+│   │   ├── config/
+│   │   │   └── database.ts          # 🗄️ MongoDB connection setup
+│   │   ├── controllers/
+│   │   │   └── authController.ts    # 🔐 Handles login, register, logout
+│   │   ├── middleware/
+│   │   │   └── authMiddleware.ts    # 🛡️ JWT verification middleware
+│   │   ├── models/
+│   │   │   ├── user.ts              # 👤 User schema (username, email, password)
+│   │   │   └── message.ts           # 💬 Message schema (content, sender, timestamp)
+│   │   ├── routes/
+│   │   │   └── authRoutes.ts        # 🛣️ Auth API routes
+│   │   ├── services/
+│   │   │   └── notificationService.ts # 🔔 Notification logic
+│   │   └── sockets/
+│   │       └── chatSocket.ts        # ⚡ Socket.io events (messages, status)
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── .env                         # Environment variables
 │
-├── frontend/ # React TypeScript app
-│ ├── public/
-│ │ └── index.html
-│ ├── src/
-│ │ ├── index.tsx # 🚀 Renders App component
-│ │ ├── App.tsx # 🏠 Main app component
-│ │ ├── components/
-│ │ │ ├── ChatWindow.tsx # 💬 Chat interface
-│ │ │ └── NotificationToast.tsx # 🔔 Toast notifications
-│ │ ├── contexts/
-│ │ │ └── AuthContext.tsx # 🔐 Auth state management
-│ │ ├── hooks/
-│ │ │ └── useSocket.ts # ⚡ Socket.io hook
-│ │ ├── pages/
-│ │ │ ├── Login.tsx # 🔑 Login/Register page
-│ │ │ └── Chat.tsx # 💬 Chat page
-│ ├── package.json
-│ └── tsconfig.json
-│
-└── README.md
+├── frontend/                        # React + TypeScript frontend
+│   ├── public/
+│   │   └── index.html               # 📄 HTML template
+│   ├── src/
+│   │   ├── index.tsx                # 🚀 React entry point
+│   │   ├── App.tsx                  # 🏠 Main app with routing
+│   │   ├── App.css                  # 🎨 Global styles
+│   │   ├── index.css                # 📝 CSS reset
+│   │   ├── components/
+│   │   │   ├── ChatWindow.tsx       # 💬 Chat UI
+│   │   │   └── NotificationToast.tsx# 🔔 Notifications
+│   │   ├── contexts/
+│   │   │   └── AuthContext.tsx      # 🔐 Auth state
 
 
 ---
